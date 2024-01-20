@@ -39,8 +39,7 @@ public class Program
                 if (userChoice == "1")
                 {
                     Entry newEntry = new Entry();
-                    // Random random = new Random();
-                    // newEntry._promptText = PromptGenerator.GetRandomPrompt(prompts, random);
+                  
                     newEntry._promptText = prompts.GetRandomPrompt();
                     Console.WriteLine(newEntry._promptText);
                     Console.Write(">>>>>  ");

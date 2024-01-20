@@ -20,7 +20,7 @@ public class PromptGenerator
         // Generate a random index
         int randomIndex = random.Next(0, _prompts.Count);
 
-        // Return the item at the random index
+        // Return the item at the random indexx
         return _prompts[randomIndex];
     }
 }

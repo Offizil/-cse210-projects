@@ -25,7 +25,7 @@ public class Journal
             }
         }
     }
-
+// hsh
     public void LoadFromFile(string file)
     {
          file = "myFile.csv";
