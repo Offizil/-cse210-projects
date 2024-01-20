@@ -16,12 +16,14 @@ public class Journal
     public void SaveToFile(string file)
     {
         //saved the file as a .csv file with comma delineation. /// This exceeds requirement
-        file = "myFile.csv";
+        // file = "myFile.csv";
+        file = "";
+
         using (StreamWriter outputFile = new StreamWriter(file))
         {
             foreach (Entry a in _entries)
             {
-                outputFile.WriteLine($"{a._date},{a._promptText},{a._entryText}");
+                outputFile.WriteLine($"{a._date},{a._promptText},{a._entryText},{a._mood}");
             }
         }
     }
@@ -38,6 +40,7 @@ public class Journal
             newEntry._date = parts[0];
             newEntry._promptText = parts[1];
             newEntry._entryText = parts[2];
+            newEntry._mood = parts[3];
             _entries.Add(newEntry);
         }
 
