@@ -47,6 +47,8 @@ public class Program
                     Console.WriteLine();
                     DateTime theCurrentTime = DateTime.Now;
                     newEntry._date = theCurrentTime.ToShortDateString();
+                    Console.Write("what is your mood today? ");
+                    newEntry._mood = Console.ReadLine();
                     theJournal.AddEntry(newEntry);
                 }
 
