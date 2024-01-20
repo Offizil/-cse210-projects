@@ -5,7 +5,6 @@ public class Program
 {
     static void Main(string[] args)
 
-    
         {
       
             PromptGenerator prompts = new PromptGenerator();
@@ -33,17 +32,20 @@ public class Program
                 {
                 Console.WriteLine("Welcome to your Personal Journal");
                 Console.WriteLine("Please select one of the following choices\n1. Write new entry\n2. Display\n3. Save\n4. Load\n5. Quit");
-                Console.Write("What would you like to do??");
+                Console.Write("What would you like to do??__");
                 userChoice = Console.ReadLine();
+                Console.WriteLine();
 
                 if (userChoice == "1")
                 {
                     Entry newEntry = new Entry();
-                    Random random = new Random();
-                    newEntry._promptText = PromptGenerator.GetRandomPrompt(prompts, random);
+                    // Random random = new Random();
+                    // newEntry._promptText = PromptGenerator.GetRandomPrompt(prompts, random);
+                    newEntry._promptText = prompts.GetRandomPrompt();
                     Console.WriteLine(newEntry._promptText);
-                    Console.Write(">  ");
+                    Console.Write(">>>>>  ");
                     newEntry._entryText = Console.ReadLine();
+                    Console.WriteLine();
                     DateTime theCurrentTime = DateTime.Now;
                     newEntry._date = theCurrentTime.ToShortDateString();
                     theJournal.AddEntry(newEntry);
