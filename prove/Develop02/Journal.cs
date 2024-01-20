@@ -17,7 +17,7 @@ public class Journal
     {
         //saved the file as a .csv file with comma delineation. /// This exceeds requirement
         // file = "myFile.csv";
-        file = "";
+        file = "myFile.csv";
 
         using (StreamWriter outputFile = new StreamWriter(file))
         {
