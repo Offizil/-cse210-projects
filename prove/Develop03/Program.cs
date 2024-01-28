@@ -7,7 +7,7 @@ class Program
         // Console.WriteLine("Hello Develop03 World!");
         Console.WriteLine("Welcome to the Scripture memorizer app");
         Console.WriteLine();
-        //i have now made it possible for user memorise just a single verse or multiple verse.
+        //i have now made it possible for user memorise either just a single verse or multiple verse.
         //For exceeding requirement.
         Console.Write("Do you wish to memorise just a single verse? ");
         string usersChoice = Console.ReadLine();
