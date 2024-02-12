@@ -54,7 +54,7 @@ public class SimpleGoal : Goal
         SetDescription(objectParts[2]);
         string pointsString = objectParts[3];
         int pointsNum = int.Parse(pointsString);
-        SetPoints(pointsNum); // replaced pointsNum with pointstring since its oringinally a string
+        SetPoints(pointsNum);  
     }
     
 }

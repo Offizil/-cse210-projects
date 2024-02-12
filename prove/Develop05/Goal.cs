@@ -47,9 +47,7 @@ public abstract class Goal
         return _shortname;
     }
 
-    /// <summary>
-    /// /end of setters and getters
-    /// </summary>
+
 
 
 

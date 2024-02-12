@@ -104,7 +104,7 @@ public class GoalManager
 
     public void CreateGoal()
     {
-         Console.WriteLine("What type of goal do you want to create?\n1. A simple Goal\n2. An eternal Goal\n3. A Checklist Goal"); //\n4. Negative Goal
+         Console.WriteLine("What type of goal do you want to create?\n1. A simple Goal\n2. An eternal Goal\n3. A Checklist Goal"); 
         string userGoal = Console.ReadLine();
         if (userGoal == "1")
         {
@@ -130,18 +130,7 @@ public class GoalManager
             EternalGoal eternalGoal = new EternalGoal(goalName, goalDesc, goalPointNum);
             _goals.Add(eternalGoal);
         }
-        // else if (userGoal == "4")
-        // {
-        //     Console.Write("What is the name of your goal? ");
-        //     string goalName = Console.ReadLine();
-        //     Console.Write("Write a short description for this goal ");
-        //     string goalDesc = Console.ReadLine();
-        //     Console.Write("What amount of points is associated with this goal? ");
-        //     string goalPoint = Console.ReadLine();
-        //     int goalPointNum = int.Parse(goalPoint);
-        //     NegativeGoal negativeGoal = new NegativeGoal(goalName, goalDesc, goalPointNum);
-        //     _goals.Add(negativeGoal);
-        // }
+        
         else
         {
             Console.Write("What is the name of your goal? ");
@@ -165,7 +154,7 @@ public class GoalManager
     public  void RecordEvent()
     {
         Console.WriteLine("What type of goal have you accomplished and would you like to record?");
-        Console.WriteLine("1. Simple Goal\n2. Eternal Goal\n3. Checklist Goal"); //\n4. Negative Goal
+        Console.WriteLine("1. Simple Goal\n2. Eternal Goal\n3. Checklist Goal"); 
         string userPref = Console.ReadLine();
         if (userPref == "1")
         {
@@ -193,19 +182,7 @@ public class GoalManager
                 }
             }
         }
-        // else if (userPref == "4")
-        // {
-        //     Console.Write("What is the name of the goal? ");
-        //     string goalname = Console.ReadLine();
-        //     foreach (Goal gola in _goals)
-        //     {
-        //         if (gola is NegativeGoal && gola.GetName() == goalname)
-        //         {
-        //             gola.RecordEvent();
-        //             _score = _score - gola.GetPoints();
-        //         }
-        //     }
-        // }
+     
         else if (userPref == "3")
         {
             Console.Write("What is the name of the goal? ");
@@ -272,12 +249,7 @@ public class GoalManager
                 eternalGoal.CreateEternalGoal(goalDetails);
                 _goals.Add(eternalGoal);
             }
-            // else if (goalType == "NegativeGoal")
-            // {
-            //     NegativeGoal negativeGoal = new NegativeGoal("a", "b", 1);
-            //     negativeGoal.CreateNegativeGoal(goalDetails);
-            //     _goals.Add(negativeGoal);
-            // }
+         
             else
             {
                 ChecklistGoal checklistGoal = new ChecklistGoal("a", "b", 1, 1, 1);

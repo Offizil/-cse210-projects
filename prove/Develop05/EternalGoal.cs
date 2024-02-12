@@ -32,7 +32,7 @@ public class EternalGoal : Goal
         SetName(objectParts[1]);
         SetDescription(objectParts[2]);
         string pointsString = objectParts[3];
-        int pointsNum = int.Parse(pointsString);/// replaced pointsNum with pointstring since its oringinally a string
+        int pointsNum = int.Parse(pointsString);
         SetPoints(pointsNum);
     }
 
