@@ -7,7 +7,7 @@ class Program
     static void Main(string[] args)
     {
 
-
+        int navChoice = -1;
 
         
         // Console.WriteLine("Hello Develop04 World!");
@@ -15,10 +15,9 @@ class Program
         Console.WriteLine();
         Console.WriteLine("Menu Options: \n1. Start breathing activity\n2. Start reflecting activity\n3. Start listing activity\n4. Quit.");
         Console.Write("Select a choice from the above menu:  ");
-        int navChoice = Convert.ToInt32(Console.Read());
+        navChoice = Convert.ToInt32(Console.Read());
 
-
-        do
+        while(navChoice != 4)
         {
             if (navChoice == 1)
             {
@@ -58,9 +57,7 @@ class Program
             else{
                 
             }
-
-
-        } while(navChoice != 4);
+        }
 
         
         
