@@ -34,7 +34,7 @@ class Program
 
 
 
-        // Create first order of the day
+        // Create second order of the day
         Console.WriteLine("Encapsulation with Online Ordering");
         Console.WriteLine();
 

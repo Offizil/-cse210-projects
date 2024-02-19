@@ -1,4 +1,5 @@
 // Address.cs
+using System;
 public class Address
 {
     private string _streetAddress;
@@ -6,19 +7,15 @@ public class Address
     private string _state;
     private string _country;
 
-    private bool IsUSA;
-
-    
-
-    
+      
 
 
 
 
 
-    public Address(string adres, string city, string province, string country)
+    public Address(string streetaddress, string city, string province, string country)
     {
-        _streetAddress = adres;
+        _streetAddress = streetaddress;
         _city = city;
         _state = province;
         _country = country;
@@ -47,26 +44,11 @@ public class Address
 
 
 
-
-
-
-
     public string DisplayAddress()
     {
         return $"{_streetAddress} \n{_city} \n{_state} \n{_country}.";
     }
 
-    public bool  IFusa()
-    {
-        if (_country == "USA")
-        {
-            IsUSA = true;;
-        }
-        else {
-            IsUSA = false;
-        }
-    return IsUSA;
-    }
-
+  
 
 }
